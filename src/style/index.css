@@ -17,6 +17,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   min-height: 100vh;
@@ -52,6 +55,14 @@ header > nav {
   color: var(--white-font);
   text-decoration: none;
   font-weight: bolder;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  padding: 30px 50px;
 }
 
 footer {
