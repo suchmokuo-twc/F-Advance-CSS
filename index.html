@@ -106,10 +106,16 @@
       </section>
 
       <form class="sign-in-form">
-        <input type="text" placeholder="Email address" />
-        <input type="password" placeholder="Password" />
-        <input type="checkbox" id="remember-me" />
-        <label for="remember-me">Remember me</label>
+        <input class="sign-in-email" type="text" placeholder="Email address" />
+        <input
+          class="sign-in-password"
+          type="password"
+          placeholder="Password"
+        />
+        <div class="remember-me-container">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
         <button class="sign-in-btn">Sign in</button>
       </form>
     </main>
