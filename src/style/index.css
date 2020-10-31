@@ -2,7 +2,7 @@
   --white-font: #b7c1c9;
   --black: #262626;
   --blue: #007bff;
-  --light-blue: #86bdfe;
+  --light-blue: #57a3ff;
   --gray-font: #a2a2a2;
   --gray-border: #d5dadf;
   --light-gray-content: #f8f9fa;
@@ -18,12 +18,9 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 * {
@@ -63,6 +60,8 @@ main {
   justify-content: center;
   flex: 1;
 
+  height: calc(100vh - 100px);
+
   padding: 30px 50px;
 }
 
@@ -93,6 +92,61 @@ aside {
 .archives {
   display: flex;
   flex-direction: column;
+}
+
+.articles {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.article-card {
+  width: 350px;
+
+  margin: 0 20px 20px 0;
+
+  border: 2px solid var(--light-gray);
+  box-shadow: 0 0 20px var(--light-gray);
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+.article-card h1 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.article-card p {
+  font-size: 15px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.article-content {
+  padding: 20px;
+}
+
+.view-detail-btn {
+  margin-top: 20px;
+
+  border: 0;
+  background-color: transparent;
+
+  color: var(--light-blue);
+  font-size: 15px;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.article-card:nth-child(2) {
+  order: 1;
+
+  margin-right: 0;
 }
 
 .sign-in-form {
